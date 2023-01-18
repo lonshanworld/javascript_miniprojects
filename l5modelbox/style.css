@@ -1,0 +1,214 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+
+    display: grid;
+    place-items: center;
+
+    padding:0;
+    margin: 0;
+}
+
+.container{
+    width: 900px;
+   
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.modal{
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    z-index: 10;
+
+    display: none;
+}
+
+.btn-close{
+    font-family: sans-serif;
+    font-size: 30;
+    color: #f4f4f4;
+    font-weight: bold;
+
+
+    position: absolute;
+    right: 40px;
+    top: 20px;
+
+    cursor: pointer;
+}
+
+.btn-close:hover{
+    color: red;
+}
+
+.form{
+    width: 500px;
+    margin: auto;
+}
+
+.form h2{
+    color: #f4f4f4;
+}
+
+.input-group{
+    width: 100%;
+    display: flex;
+
+    margin-bottom: 15px;
+}
+
+.input-group .fas{
+    width: 50px;
+    background-color: steelblue;
+    color: #fff;
+    text-align: center;
+
+    padding: 10px;
+}
+
+.input-group-text{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+.input-group-text:focus{
+    border: 2px solid steelblue;
+}
+
+.d-grid .btn{
+    width: 100%;
+    background-color: steelblue;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.d-grid .btn:hover{
+    opacity: 1;
+}
+
+#btn-closescreen{
+    display: none;
+}
+
+:fullscreen{
+    background-color: #333;
+}
+
+:-ms-fullscreen{
+    background-color: #333;
+}
+
+:-webkit-full-screen{
+    background-color: #333;
+}
+
+#fullscreendialog{
+    position: absolute;
+    z-index: 200;
+
+    display: none;
+    text-align: center;
+    margin: 0;
+    padding: 10px 30px;
+    top: 0;
+
+    /* background-color: aquamarine; */
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+/* 
+https://getcssscan.com/css-box-shadow-examples */
+
+#yesbtn,#nobtn{
+    margin: 0px 5px;
+}
+
+/* CSS */
+#yesbtn {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+#yesbtn:hover,
+#yesbtn:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+#yesbtn:active {
+  opacity: .5;
+}
+
+/* <!-- HTML !-->
+<button class="button-23" role="button">Button 23</button> */
+
+
+#nobtn {
+    border: 1px solid #42d3ff;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+  }
+  
+#nobtn:hover,
+#nobtn:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #4284ff;
+  }
+  
+#nobtn:active {
+    opacity: .5;
+  }
